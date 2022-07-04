@@ -1,14 +1,14 @@
 package scala.com.helkaerea
 
-import org.scalatest.{BeforeAndAfterEach, BeforeAndAfterAll, FunSpec}
-import org.scalatest.matchers.ShouldMatchers
+import org.scalatest.{BeforeAndAfterEach, BeforeAndAfterAll}
+import org.scalatest.funspec.AnyFunSpec
+import org.scalatest.matchers.should.Matchers
 import org.junit.runner.RunWith
-import org.scalatest.junit.JUnitRunner
+import org.scalatestplus.junit.JUnitRunner
 
-import org.scalatest._
 
 @RunWith(classOf[JUnitRunner])
-class HelloTest extends FunSpec with ShouldMatchers with BeforeAndAfterAll with BeforeAndAfterEach {
+class HelloTest extends AnyFunSpec with Matchers with BeforeAndAfterAll with BeforeAndAfterEach {
   describe("first test") {
 
     it("should add 2 numbers") {
